@@ -13,7 +13,9 @@ import random
 
 #----------functions--------------
 def main():
-    pushups_per_day = [ ]           
+    pushups_per_day = [ ]                           #Empty list that will have inputs added for the amount of pushups they were able to do
+    name = input('Please enter your name: ')        #String input asking for the users name
+    age = int(input('Please enter your age: '))     #Int input asking for the users age
 
 
 
