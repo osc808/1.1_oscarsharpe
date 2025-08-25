@@ -6,13 +6,14 @@
 '''
 
 #----------libraries--------------
-
+import random
 
 
 
 
 #----------functions--------------
-
+def main():
+    pushups_per_day = [ ]           
 
 
 
