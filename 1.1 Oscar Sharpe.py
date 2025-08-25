@@ -4,3 +4,22 @@
     date: 25/08/2025
     description: A fitness tracker program to track a year 11 senior class and their workout results
 '''
+
+#----------libraries--------------
+
+
+
+
+
+#----------functions--------------
+
+
+
+
+
+#---------main routine------------
+
+
+
+
+
