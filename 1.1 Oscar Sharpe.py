@@ -11,8 +11,15 @@ import random
 
 #----------functions--------------
 def main():
-    pushups_per_min = [ ]                           #Empty list that will have inputs added for the amount of pushups they were able to do
-    name = input('Please enter your name: ')        #String input asking for the users name
+    pushups_per_min = [ ]    #Empty list that will have inputs added for the amount of pushups they were able to do
+    while (True):
+        try:
+            name = input('Please enter your name: ')        #String input asking for the users name
+            if(len(name)>= 2 and len(name)<=20 and name.isalpha):
+                break
+        except:
+
+
     age = int(input('Please enter your age: '))     #Int input asking for the users age
     day_of_week = ['Monday','Tuesday','Wednesday','Thursday','Friday']  #List for the days of the week
     for i in day_of_week:
