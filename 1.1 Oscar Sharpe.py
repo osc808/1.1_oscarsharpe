@@ -17,6 +17,8 @@ def main():
             name = input('Please enter your name: ')        #String input asking for the users name
             if(len(name)>= 2 and len(name)<=20 and name.isalpha):
                 break
+            else:
+                print('That was not a valid input')
         except:
             print('That was not a valid input')
 
