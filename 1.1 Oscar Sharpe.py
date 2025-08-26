@@ -18,7 +18,7 @@ def main():
             if(len(name)>= 2 and len(name)<=20 and name.isalpha):
                 break
         except:
-
+            print('That was not a valid input')
 
     age = int(input('Please enter your age: '))     #Int input asking for the users age
     day_of_week = ['Monday','Tuesday','Wednesday','Thursday','Friday']  #List for the days of the week
