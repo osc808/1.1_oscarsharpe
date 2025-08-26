@@ -23,6 +23,7 @@ def main():
         except:
             print('That was not a valid input')
 
+    print(f'Hello {name}, welcome to the fitness tracker!')
 
     while (True):           #Loop that will loop until broken and age is validated
         try:                #Try/except
