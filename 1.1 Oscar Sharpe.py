@@ -25,10 +25,12 @@ def main():
 
 
     while (True):           #Loop that will loop until broken and age is validated
-        try:
+        try:                #Try/except
             age = int(input('Please enter your age: '))     #Int input asking for the users age
-            if(age >=13 and age<=20 and age.is_integer):
-                break
+            if(age >=13 and age<=20 and age.is_integer):    #Checks that the age is an integer, and that it is in the range of 13-20 (Since it is a year 11 class)
+                break       #Loop will break if the input is valid
+            else:
+                print('That was not a valid input')     #Error message will print if the input was not valid
         except:
             print('That was not a valid input')
 
