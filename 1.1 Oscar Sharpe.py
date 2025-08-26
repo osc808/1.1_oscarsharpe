@@ -12,6 +12,7 @@ import random
 #----------functions--------------
 def main():
     pushups_per_min = [ ]    #Empty list that will have inputs added for the amount of pushups they were able to do
+
     while (True):               #Loop will loop until broken, which happens when the name is validated
         try:                    #Try/except 
             name = input('Please enter your name: ')        #String input asking for the users name
@@ -23,7 +24,15 @@ def main():
             print('That was not a valid input')
 
 
-    age = int(input('Please enter your age: '))     #Int input asking for the users age
+    while (True):           #Loop that will loop until broken and age is validated
+        try:
+            age = int(input('Please enter your age: '))     #Int input asking for the users age
+            if(age >=13 and age<=20 and age.is_integer):
+                break
+        except:
+            print('That was not a valid input')
+
+    
     day_of_week = ['Monday','Tuesday','Wednesday','Thursday','Friday']  #List for the days of the week
     for i in day_of_week:
         pushups_per_min.append(int(input('How many pushups were you able to do: ')))
