@@ -9,8 +9,6 @@
 import random
 
 
-
-
 #----------functions--------------
 def main():
     pushups_per_min = [ ]                           #Empty list that will have inputs added for the amount of pushups they were able to do
@@ -20,12 +18,8 @@ def main():
     for i in days_worked_out:
         pushups_per_min.append(int(input('How many pushups were you able to do: ')))
 
-
-
-
-
 #---------main routine------------
-
+main()
 
 
 
