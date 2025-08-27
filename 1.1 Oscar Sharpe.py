@@ -11,7 +11,7 @@ import random
 
 #----------functions--------------
 def main():
-    pushups_per_min = [ ]    #Empty list that will have inputs added for the amount of pushups they were able to do
+    pushups_per_day = [ ]    #Empty list that will have inputs added for the amount of pushups they were able to do
 
     while (True):               #Loop will loop until broken, which happens when the name is validated
         try:                    #Try/except 
@@ -37,8 +37,12 @@ def main():
 
     
     day_of_week = ['Monday','Tuesday','Wednesday','Thursday','Friday']  #List for the days of the week
-    for i in day_of_week:
-        pushups_per_min.append(int(input('How many pushups were you able to do: ')))
+    for days in day_of_week:
+        print(days)                         #Prints each day of the week for each time it loops e.g. first loop will say 'Monday' and second will say 'Tuesday'
+        pushups_per_day.append(int(input('How many pushups were you able to do throughout the day?: ')))
+    
+
+        
 
 #---------main routine------------
 main()
