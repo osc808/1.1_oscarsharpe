@@ -41,8 +41,9 @@ def main():
         while (True):
             try:
                 print(days)                         #Prints each day of the week for each time it loops e.g. first loop will say 'Monday' and second will say 'Tuesday'
-                pushups_per_day.append(int(input('How many pushups were you able to do throughout the day?: ')))
-                if(pushups_per_day >=0 and pushups_per_day <=100):
+                user_pushups = (int(input('How many pushups were you able to do throughout the day?: ')))
+                if(user_pushups >=0 and user_pushups <=100):
+                    pushups_per_day.append(user_pushups)
                     break
                 else:
                     print('That was not a valid input') #Code will repeat if invalid
