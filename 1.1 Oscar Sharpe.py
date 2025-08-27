@@ -42,12 +42,12 @@ def main():
             try:
                 print(days)                         #Prints each day of the week for each time it loops e.g. first loop will say 'Monday' and second will say 'Tuesday'
                 pushups_per_day.append(int(input('How many pushups were you able to do throughout the day?: ')))
-                if(pushups_per_day <=-1 or pushups_per_day >=100):
+                if(pushups_per_day >=0 and pushups_per_day <=100):
                     break
                 else:
-                    print('That was not a valid input')
+                    print('That was not a valid input') #Code will repeat if invalid
             except:
-                print('That was not a valid input')
+                print('That was not a valid input') #Code will repeat if invalid
                 
     print(f'Your scores across the day were {pushups_per_day}') #Tells the user their score across the 5 days
     top_score = max(pushups_per_day)        #Calculating the top score 
