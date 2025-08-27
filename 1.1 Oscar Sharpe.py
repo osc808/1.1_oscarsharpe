@@ -52,7 +52,7 @@ def main():
                 
     print(f'Your scores across the day were {pushups_per_day}') #Tells the user their score across the 5 days
     top_score = max(pushups_per_day)        #Calculating the top score 
-    print(f'Nice work! The most amount of pushups you did in one day was {top_score}')
+    print(f'Nice work! The most amount of pushups you did in one day was {top_score}! Pretty solid for {age}!')
 
 
 
