@@ -40,9 +40,9 @@ def main():
     for days in day_of_week:
         print(days)                         #Prints each day of the week for each time it loops e.g. first loop will say 'Monday' and second will say 'Tuesday'
         pushups_per_day.append(int(input('How many pushups were you able to do throughout the day?: ')))
-    print('Your scores across the day were ')
+    print(f'Your scores across the day were {pushups_per_day}') #Tells the user their score across the 5 days
     top_score = max(pushups_per_day)        #Calculating the top score 
-    print(f'Nice work! Your top score was {top_score}')
+    print(f'Nice work! The most amount of pushups you did in one day was {top_score}')
 
 
 
