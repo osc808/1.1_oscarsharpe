@@ -42,7 +42,7 @@ def main():
             try:
                 print(days)                         #Prints each day of the week for each time it loops e.g. first loop will say 'Monday' and second will say 'Tuesday'
                 user_pushups = (int(input('How many pushups were you able to do throughout the day?: ')))
-                if(user_pushups >=0 and user_pushups <=100):
+                if(user_pushups >=0 and user_pushups <=200):
                     pushups_per_day.append(user_pushups)
                     break
                 else:
