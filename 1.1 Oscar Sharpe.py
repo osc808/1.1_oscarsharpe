@@ -21,7 +21,7 @@ def main():
             else:                                    #Else for if the input was not valid
                 print('That was not a valid input - Please enter text between 2-20 letters')
         except:
-            print('That was not a valid input')
+            print('That was not a valid input - Please enter text between 2-20 letters')
 
     print(f'Hello {name}, welcome to the fitness tracker!')
 
@@ -33,7 +33,7 @@ def main():
             else:
                 print('That was not a valid input - Please enter a number between 13-20')     #Error message will print if the input was not valid
         except:
-            print('That was not a valid input')
+            print('That was not a valid input - Please enter a number between 13-20')
 
     
     day_of_week = ['Monday','Tuesday','Wednesday','Thursday','Friday']  #List for the days of the week
@@ -48,7 +48,7 @@ def main():
                 else:
                     print('That was not a valid input - Please enter a number between 0 - 100') #Code will repeat if invalid
             except:
-                print('That was not a valid input') #Code will repeat if invalid
+                print('That was not a valid input - Please enter a number between 0 - 100') #Code will repeat if invalid
                 
     print(f'Your scores across the day were {pushups_per_day}') #Tells the user their score across the 5 days
     average_score = (sum(pushups_per_day) / len(pushups_per_day))   #Calculates the average pushups done by adding all numbers in the list and dividing by the length
