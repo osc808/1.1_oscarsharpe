@@ -31,7 +31,7 @@ def main():
             if(age >=13 and age<=20 and age.is_integer):    #Checks that the age is an integer, and that it is in the range of 13-20 (Since it is a year 11 class)
                 break       #Loop will break if the input is valid
             else:
-                print('That was not a valid input')     #Error message will print if the input was not valid
+                print('That was not a valid input - Please enter a number between 13-20')     #Error message will print if the input was not valid
         except:
             print('That was not a valid input')
 
