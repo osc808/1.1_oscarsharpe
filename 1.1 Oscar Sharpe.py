@@ -19,7 +19,7 @@ def main():
             if(len(name)>= 2 and len(name)<=20 and name.isalpha):   #Checks that the name length is more or equal to 2, and no longer than 20. It also checks that the input is a word and not a number
                 break                                #The loop will break and the code will carry on if the name is validated               
             else:                                    #Else for if the input was not valid
-                print('That was not a valid input')
+                print('That was not a valid input - Please enter text between 2-20 letters')
         except:
             print('That was not a valid input')
 
