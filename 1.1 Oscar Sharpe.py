@@ -51,8 +51,10 @@ def main():
                 print('That was not a valid input') #Code will repeat if invalid
                 
     print(f'Your scores across the day were {pushups_per_day}') #Tells the user their score across the 5 days
+    average_score = (sum(pushups_per_day) / len(pushups_per_day))   #Calculates the average pushups done by adding all numbers in the list and dividing by the length
+    print(f'Your average score across the days was {average_score}')    #Printing the average score
     top_score = max(pushups_per_day)        #Calculating the top score 
-    print(f'Nice work! The most amount of pushups you did in one day was {top_score}! Pretty solid for {age}!')
+    print(f'Nice work! The most amount of pushups you did in one day was {top_score}! Pretty solid for {age}!') #Printing the top score as well as the age
 
 
 
