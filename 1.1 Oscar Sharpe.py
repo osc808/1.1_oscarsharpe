@@ -19,9 +19,9 @@ def main():
             if(len(name)>= 2 and len(name)<=20 and name.isalpha):   #Checks that the name length is more or equal to 2, and no longer than 20. It also checks that the input is a word and not a number
                 break                                #The loop will break and the code will carry on if the name is validated               
             else:                                    #Else for if the input was not valid
-                print('That was not a valid input - Please enter text between 2-20 letters')
+                print('That was not a valid input - Please enter text between 2-20 letters')    #Error message if input is not within range
         except:
-            print('That was not a valid input - Please enter text between 2-20 letters')
+            print('That was not a valid input - Please enter text between 2-20 letters')    #Error message if input is not text
 
     print(f'Hello {name}, welcome to the fitness tracker!')
 
@@ -33,7 +33,7 @@ def main():
             else:
                 print('That was not a valid input - Please enter a number between 13-20')     #Error message will print if the input was not valid
         except:
-            print('That was not a valid input - Please enter a number between 13-20')
+            print('That was not a valid input - Please enter a number between 13-20') #Error message if it is not an integer
 
     
     day_of_week = ['Monday','Tuesday','Wednesday','Thursday','Friday']  #List for the days of the week
