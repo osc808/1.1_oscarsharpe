@@ -46,7 +46,7 @@ def main():
                     pushups_per_day.append(user_pushups)
                     break
                 else:
-                    print('That was not a valid input') #Code will repeat if invalid
+                    print('That was not a valid input - Please enter a number between 0 - 100') #Code will repeat if invalid
             except:
                 print('That was not a valid input') #Code will repeat if invalid
                 
