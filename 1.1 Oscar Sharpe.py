@@ -50,17 +50,18 @@ def main():
             except:
                 print('That was not a valid input - Please enter a number between 0 - 100') #Code will repeat if invalid
                 
-    print(f'Your scores across the day were {pushups_per_day}') #Tells the user their score across the 5 days
+    print(f'Your push ups across the day were {pushups_per_day}') #Tells the user their score across the 5 days
     average_score = (sum(pushups_per_day) / len(pushups_per_day))   #Calculates the average pushups done by adding all numbers in the list and dividing by the length
     top_score = max(pushups_per_day)        #Calculating the top score 
 
     if (average_score >=50):        #Printing a personalised message based on how good they did over the week
-        print(f"Your average score was {average_score}! That is amazing work!")     #If they got 50 or more, it would say very positive message
+        print(f"Your average push ups per day was {average_score}! That is amazing work!")     #If they got 50 or more, it would say very positive message
     elif (average_score >= 25 and average_score <= 49):
-        print(f"Your average score was {average_score}! That is some solid work!")#If they got 25-49, it would say a positive message
-    elif (average_score <= 24):
-        print(f"Your average score was {average_score}! That is an okay start, try aim for higher next week!") #If they got 24 or lower, it would print an encouraging message
-
+        print(f"Your average push ups per day was {average_score}! That is some solid work!")#If they got 25-49, it would say a positive message
+    elif (average_score <= 24 and average_score >= 10):
+        print(f"Your average push ups per day was {average_score}! That is an okay start, try aim for higher next week!") #If they got 24 - 10, it would print an encouraging message
+    elif (average_score <= 9):
+        print(f"Your average push ups per day was {average_score}! Those were not the best results! Try to do better next week!") #If they got 9 or less, it would tell the that the score was not very good
     print(f'Nice work! The most amount of pushups you did in one day was {top_score}! Pretty solid for {age}!') #Printing the top score as well as the age
 
 
