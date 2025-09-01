@@ -13,6 +13,7 @@ import random
 def main():
     pushups_per_day = [ ]    #Empty list that will have inputs added for the amount of pushups they were able to do
 
+    #---Name validator
     while (True):               #Loop will loop until broken, which happens when the name is validated
         try:                    #Try/except 
             name = str(input('Please enter your name: '))        #String input asking for the users name
@@ -25,6 +26,7 @@ def main():
 
     print(f'Hello {name}, welcome to the fitness tracker!')
 
+    #--- Age validator
     while (True):           #Loop that will loop until broken and age is validated
         try:                #Try/except
             age = int(input('Please enter your age: '))     #Int input asking for the users age
@@ -35,7 +37,7 @@ def main():
         except:
             print('That was not a valid input - Please enter a number between 13-20') #Error message if it is not an integer
 
-    
+    #---Getting the push up results from the user
     day_of_week = ['Monday','Tuesday','Wednesday','Thursday','Friday']  #List for the days of the week
     for days in day_of_week:
         while (True):
@@ -50,6 +52,7 @@ def main():
             except:
                 print('That was not a valid input - Please enter a number between 0 - 100') #Code will repeat if invalid
                 
+    #---Calculating and printing the results
     print(f'Your push ups across the day were {pushups_per_day}') #Tells the user their score across the 5 days
     average_score = (sum(pushups_per_day) / len(pushups_per_day))   #Calculates the average pushups done by adding all numbers in the list and dividing by the length
     top_score = max(pushups_per_day)        #Calculating the top score 
@@ -64,9 +67,6 @@ def main():
         print(f"Your average push ups per day was {average_score}! Those were not the best results! Try to do better next week!") #If they got 9 or less, it would tell the that the score was not very good
     print(f'Nice work! The most amount of pushups you did in one day was {top_score}! Pretty solid for {age}!') #Printing the top score as well as the age
 
-
-
-        
 
 #---------main routine------------
 main()
