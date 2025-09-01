@@ -52,8 +52,15 @@ def main():
                 
     print(f'Your scores across the day were {pushups_per_day}') #Tells the user their score across the 5 days
     average_score = (sum(pushups_per_day) / len(pushups_per_day))   #Calculates the average pushups done by adding all numbers in the list and dividing by the length
-    print(f'Your average score across the days was {average_score}')    #Printing the average score
     top_score = max(pushups_per_day)        #Calculating the top score 
+
+    if (average_score >=50):        #Printing a personalised message based on how good they did over the week
+        print(f"Your average score was {average_score}! That is amazing work!")     #If they got 50 or more, it would say very positive message
+    elif (average_score >= 25 and average_score <= 49):
+        print(f"Your average score was {average_score}! That is some solid work!")#If they got 25-49, it would say a positive message
+    elif (average_score <= 24):
+        print(f"Your average score was {average_score}! That is an okay start, try aim for higher next week!") #If they got 24 or lower, it would print an encouraging message
+
     print(f'Nice work! The most amount of pushups you did in one day was {top_score}! Pretty solid for {age}!') #Printing the top score as well as the age
 
 
