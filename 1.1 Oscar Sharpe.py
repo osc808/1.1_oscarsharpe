@@ -10,7 +10,7 @@ import random
 
 
 #----------functions--------------
-def main():
+def fitness_tracker():
     pushups_per_day = [ ]    #Empty list that will have inputs added for the amount of pushups they were able to do
 
     #---Name validator
@@ -69,7 +69,7 @@ def main():
 
 
 #---------main routine------------
-main()
+fitness_tracker()
 
 
 
