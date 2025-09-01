@@ -43,9 +43,9 @@ def fitness_tracker():
         while (True):
             try:
                 print(days)                         #Prints each day of the week for each time it loops e.g. first loop will say 'Monday' and second will say 'Tuesday'
-                user_pushups = (int(input('How many pushups were you able to do throughout the day?: ')))
-                if(user_pushups >=0 and user_pushups <=200):
-                    pushups_per_day.append(user_pushups)
+                user_pushups = (int(input('How many pushups were you able to do throughout the day?: ')))   #Takes a numerical input
+                if(user_pushups >=0 and user_pushups <=200):    #Checks that the pushups are within a reasonable range
+                    pushups_per_day.append(user_pushups)        #Adds input to the list 
                     break
                 else:
                     print('That was not a valid input - Please enter a number between 0 - 100') #Code will repeat if invalid
